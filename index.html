@@ -136,6 +136,43 @@
       </style>
     </section>
 
+    <section class="slide slide--bsa" id="logic-storages">
+      <ul class="logic-storages__wrapper">
+        <li class="logic-storages__wrapper-item">
+          <h3 class="logic-storages__wrapper-title">Inside Component</h3>
+          <ul class="logic-storages__wrapper-list next">
+            <li class="logic-storages__wrapper-list-item">Logic for processing responses is stored<br> in the same place where the user answers</li>
+            <li class="logic-storages__wrapper-list-item next">Component cannot be reused</li>
+            <li class="logic-storages__wrapper-list-item next">Hard to write tests</li>
+          </ul>
+        </li>
+        <li class="logic-storages__wrapper-item">
+          <h3 class="logic-storages__wrapper-title">At the top level</h3>
+          <ul class="logic-storages__wrapper-list">
+            <li class="logic-storages__wrapper-list-item next">Components becomes more reusable</li>
+            <li class="logic-storages__wrapper-list-item next">Component becomes too large<br> and starts to know about everything</li>
+            <li class="logic-storages__wrapper-list-item next">Writing a test is inconvenient<br> and time consuming</li>
+          </ul>
+        </li>
+      </ul>
+
+      <style>
+        #logic-storages .logic-storages__wrapper {
+          display: flex;
+          gap: 50px;
+        }
+
+        #logic-storages .logic-storages__wrapper-item::before {
+          display: none;
+        }
+
+        #logic-storages .logic-storages__wrapper-list {
+          font-size: 19px;
+        }
+      </style>
+    </section>
+
+
     <section class="slide slide--bsa" id="redux-basic-flow">
       <h2>Redux Basic Flow</h2>
       <img class="redux-basic-flow__img next" src="pictures/redux-basic-flow.png" width="450" height="450" alt="Redux Basic Flow">
