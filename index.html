@@ -486,6 +486,36 @@
       </ul>
     </section>
 
+    <section class="slide slide--bsa" id="redux-hooks">
+      <h2>useSelector & useDispatch</h2>
+      <pre class="redux-hooks__code next">
+        <span class="comment">// src/components/dashboard/dashboard.jsx</span>
+        <code>import { <mark>useSelector</mark>, <mark>useDispatch</mark> } from 'react-redux';</code>
+        <div class="next">
+          <code> </code>
+          <code>const Dashboard = () => {</code>
+          <code>  const { todos } = <mark>useSelector((store) => ({ todos: store.todos.todos }))</mark>;</code>
+          <code>  const dispatch = <mark>useDispatch()</mark>;</code>
+          <code> </code>
+          <code>  React.useEffect(() => {</code>
+          <code>    dispatch(TodosActionCreator.fetchTodos());</code>
+          <code>  }, []);</code>
+          <code> </code>
+          <code>  return &lt;ul&gt;{todos.map((it) => &lt;li key={it.id}&gt;{it.name}&lt;/li&gt;)}&lt;/ul&gt;;</code>
+          <code>}</code>
+        </div>
+      </pre>
+      <a class="redux__link bottom-link" href="https://react-redux.js.org/api/hooks" target="_blank" rel="noreferrer">
+        Redux Hooks
+      </a>
+
+      <style>
+        #redux-hooks .redux-hooks__code {
+          font-size: 14px;
+        }
+      </style>
+    </section>
+
     <section class="slide slide--bsa" id="redux-basic-flow">
       <h2>Redux Basic Flow</h2>
       <img class="redux-basic-flow__img next" src="pictures/redux-basic-flow.png" width="450" height="450" alt="Redux Basic Flow">
