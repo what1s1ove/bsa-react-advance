@@ -20,6 +20,14 @@
         background-position: right 20px bottom 25px, left 20px bottom 15px;
         background-size: 75px, 50px;
       }
+
+      .bottom-link {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+      }
     </style>
   </head>
   <body class="shower list">
@@ -57,90 +65,541 @@
       </style>
     </section>
 
+    <section class="slide slide--bsa" id="business-logic">
+      <h2 class="business-logic__title">Business Logic</h2>
+      <p class="business-logic__description next">
+        Real world rules and constraints that are described using a computer program
+      </p>
+
+      <style>
+        #business-logic .business-logic__title {
+          margin: 180px 0 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="real-business-logic">
+      <ul class="real-business-logic__wrapper">
+        <li class="real-business-logic__wrapper-item">
+          <h3 class="real-business-logic__wrapper-title">Business Logic</h3>
+          <ul class="real-business-logic__wrapper-list next">
+            <li class="real-business-logic__wrapper-list-item">Checking if the user <br>answered the question correctly</li>
+            <li class="real-business-logic__wrapper-list-item next">Fetching & storing TODOs</li>
+            <li class="real-business-logic__wrapper-list-item next">Search in the best results list</li>
+          </ul>
+        </li>
+        <li class="real-business-logic__wrapper-item">
+          <h3 class="real-business-logic__wrapper-title">Not Business Logic</h3>
+          <ul class="real-business-logic__wrapper-list">
+            <li class="real-business-logic__wrapper-list-item next">Event handling</li>
+            <li class="real-business-logic__wrapper-list-item next">Timer expiration</li>
+            <li class="real-business-logic__wrapper-list-item next">Loading...</li>
+          </ul>
+        </li>
+      </ul>
+
+      <style>
+        #real-business-logic .real-business-logic__wrapper {
+          display: flex;
+          gap: 100px;
+        }
+
+        #real-business-logic .real-business-logic__wrapper-item::before {
+          display: none;
+        }
+
+        #real-business-logic .real-business-logic__wrapper-list {
+          font-size: 22px;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="logic-storage">
+      <h2 class="logic-storage__title">Logic Storage 💿</h2>
+
+      <style>
+        #logic-storage .logic-storage__title {
+          margin: 180px 0 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="react-flow">
+      <h2>React Application Structure</h2>
+      <img class="react-flow__img next" src="pictures/react-flow.svg" width="450" alt="React Flow">
+
+      <style>
+        #react-flow .react-flow__img {
+          display: block;
+          margin: 0 auto;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="logic-storages">
+      <ul class="logic-storages__wrapper">
+        <li class="logic-storages__wrapper-item">
+          <h3 class="logic-storages__wrapper-title">Inside Component</h3>
+          <ul class="logic-storages__wrapper-list next">
+            <li class="logic-storages__wrapper-list-item">Logic for processing responses is stored<br> in the same place where the user answers</li>
+            <li class="logic-storages__wrapper-list-item next">Component cannot be reused</li>
+            <li class="logic-storages__wrapper-list-item next">Hard to write tests</li>
+          </ul>
+        </li>
+        <li class="logic-storages__wrapper-item">
+          <h3 class="logic-storages__wrapper-title">At the top level</h3>
+          <ul class="logic-storages__wrapper-list">
+            <li class="logic-storages__wrapper-list-item next">Components becomes more reusable</li>
+            <li class="logic-storages__wrapper-list-item next">Component becomes too large<br> and starts to know about everything</li>
+            <li class="logic-storages__wrapper-list-item next">Writing a test is inconvenient<br> and time consuming</li>
+          </ul>
+        </li>
+      </ul>
+
+      <style>
+        #logic-storages .logic-storages__wrapper {
+          display: flex;
+          gap: 50px;
+        }
+
+        #logic-storages .logic-storages__wrapper-item::before {
+          display: none;
+        }
+
+        #logic-storages .logic-storages__wrapper-list {
+          font-size: 19px;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux">
+      <h2 class="flux__title">Flux</h2>
+      <p class="business-logic__description next">
+        Application Architecture
+      </p>
+      <a class="flux__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux .flux__title {
+          margin: 180px 0 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="unidirectional-flow">
+      <h2 class="unidirectional-flow__title">Unidirectional Data Flow</h2>
+      <img class="unidirectional-flow__img next" src="pictures/react-flow.svg" width="450" alt="React Flow">
+      <a class="unidirectional-flow__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #unidirectional-flow .unidirectional-flow__img {
+          display: block;
+          margin: 0 auto;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-flow">
+      <h2 class="flux-flow__title">Flux Flow</h2>
+      <img class="flux-flow__img next" src="pictures/flux-flow-1.svg" width="450" alt="Flux Flow">
+      <img class="flux-flow__img next" src="pictures/flux-flow-2.svg" width="450" alt="Flux Flow">
+      <a class="flux-flow__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-flow .flux-flow__img {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-issues">
+      <h2>Update issues</h2>
+      <ul class="next">
+        <li>Hierarchy</li>
+        <li class="next">Large nesting</li>
+        <li class="next">Data transfer only via props</li>
+        <li class="next">Rerender when props change (always)</li>
+        <li class="next">Root component becomes more complex</li>
+        <li class="next">Lack of communication one level</li>
+      </ul>
+      <a class="flux-flow__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-store">
+      <h2 class="flux-store__title">Single Application State</h2>
+      <img class="flux-store__img next" src="pictures/flux-flow-store.svg" width="650" alt="Flux Flow">
+      <a class="flux-store__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-store .flux-store__img {
+          display: block;
+          margin: 0 auto;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-features">
+      <h2>Flux</h2>
+      <ul class="flux-features__list next">
+        <li>Flux — an application architecture designed by Facebook</li>
+        <li class="next">Control over data flow</li>
+        <li class="next">How to apply the data in the application</li>
+        <li class="next">
+          Manages data. Doesn't solve issues
+          <ul class="next">
+            <li>Communication between components</li>
+            <li class="next">When to redraw the view</li>
+            <li class="next">How to load data</li>
+          </ul>
+        </li>
+        <li class="next">New entities: Action, Store, Dispatch & View</li>
+      </ul>
+      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-features .flux-features__list {
+          font-size: 20px;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-entities">
+      <h2>Action, Store, Dispatch & View</h2>
+      <ul class="flux-entities__list next">
+        <li class="flux-entities__item">Action</li>
+        <li class="flux-entities__item">Dispatcher</li>
+        <li class="flux-entities__item">Store</li>
+        <li class="flux-entities__item">View</li>
+      </ul>
+      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-entities .flux-entities__list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 120px 0 0;
+          gap: 30px;
+        }
+
+        #flux-entities .flux-entities__item::before {
+          display: none;
+        }
+
+        #flux-entities .flux-entities__item {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-action">
+      <h2 class="flux-action__title">Action</h2>
+      <p class="flux-action__block next">Action</p>
+      <ul class="next">
+        <li>Describes actions</li>
+        <li class="next">Answers the question: "What needs to be done"</li>
+        <li class="next">Must contain a name (type)</li>
+      </ul>
+      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-action .flux-action__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-dispatcher">
+      <h2 class="flux-dispatcher__title">Dispatcher</h2>
+      <p class="flux-dispatcher__block next">Dispatcher</p>
+      <ul class="next">
+        <li>Manager</li>
+        <li class="next">Sends information about the event to the storage</li>
+      </ul>
+      <a class="flux-dispatcher__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-dispatcher .flux-dispatcher__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-store">
+      <h2 class="flux-store__title">Store</h2>
+      <p class="flux-store__block next">Store</p>
+      <ul class="next">
+        <li>State of Application</li>
+        <li class="next">Data can only change based on actions</li>
+        <li class="next">Provides interfaces for getting data</li>
+      </ul>
+      <a class="flux-store__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-store .flux-store__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-view">
+      <h2 class="flux-view__title">View</h2>
+      <p class="flux-view__block next">View</p>
+      <ul class="next">
+        <li>Presentation of information</li>
+        <li class="next">Components</li>
+      </ul>
+      <a class="flux-view__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-view .flux-view__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-entities-flow">
+      <h2>All together 🧬</h2>
+      <img class="flux-entities-flow__img next" src="pictures/flex-entities-flow.png" width="650" alt="Flux Flow">
+      <a class="flux-entities-flow__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-entities-flow .flux-entities-flow__img {
+          display: block;
+          margin: 130px auto 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="redux">
+      <h2 class="redux__title">Redux</h2>
+      <a class="redux__link bottom-link" href="https://redux.js.org/" target="_blank" rel="noreferrer">
+        Redux
+      </a>
+
+      <style>
+        #redux .redux__title {
+          margin: 180px 0 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="redux-features">
+      <h2 class="redux-features__title">Redux</h2>
+      <ul class="next">
+        <li>Single Source of Truth</li>
+        <li class="next">Store is modified using reducers</li>
+        <li class="next">One-way sync from storage to View via subscription</li>
+        <li class="next">Reverse sync view ➡️ store works through actions</li>
+      </ul>
+      <a class="redux__link bottom-link" href="https://redux.js.org/" target="_blank" rel="noreferrer">
+        Redux
+      </a>
+    </section>
+
+    <section class="slide slide--bsa" id="redux-flow">
+      <h2>Redux Flow</h2>
+      <img class="redux-flow__img next" src="pictures/redux-flow-1.png" width="700" alt="Redux Flow">
+      <img class="redux-flow__img next" src="pictures/redux-flow-2.png" width="700" alt="Redux Flow">
+      <img class="redux-flow__img next" src="pictures/redux-flow-3.png" width="700" alt="Redux Flow">
+      <img class="redux-flow__img next" src="pictures/redux-flow-4.png" width="700" alt="Redux Flow">
+      <a class="redux__link bottom-link" href="https://redux.js.org/" target="_blank" rel="noreferrer">
+        Redux
+      </a>
+
+      <style>
+        #redux-flow .redux-flow__img {
+          position: absolute;
+          top: 250px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="ac">
+      <h2 class="ac__title">Action Creators pattern</h2>
+      <p class="ac__description next">An approach in which actions are created not by hand inside the component<br>but through an external function</p>
+
+      <style>
+        #ac .ac__title {
+          margin: 180px 0 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="ac-features">
+      <h2>Action Creators pattern</h2>
+      <ul class="next">
+        <li>additional logic isn't stored in the component<br> but is kept separately where it can be reused or tested</li>
+        <li class="next">Component becomes more abstract</li>
+      </ul>
+    </section>
+
+    <section class="slide slide--bsa" id="redux-hooks">
+      <h2>useSelector & useDispatch</h2>
+      <pre class="redux-hooks__code next">
+        <span class="comment">// src/components/dashboard/dashboard.jsx</span>
+        <code>import { <mark>useSelector</mark>, <mark>useDispatch</mark> } from 'react-redux';</code>
+        <div class="next">
+          <code> </code>
+          <code>const Dashboard = () => {</code>
+          <code>  const { todos } = <mark>useSelector((store) => ({ todos: store.todos.todos }))</mark>;</code>
+          <code>  const dispatch = <mark>useDispatch()</mark>;</code>
+          <code> </code>
+          <code>  React.useEffect(() => {</code>
+          <code>    dispatch(TodosActionCreator.fetchTodos());</code>
+          <code>  }, []);</code>
+          <code> </code>
+          <code>  return &lt;ul&gt;{todos.map((it) => &lt;li key={it.id}&gt;{it.name}&lt;/li&gt;)}&lt;/ul&gt;;</code>
+          <code>}</code>
+        </div>
+      </pre>
+      <a class="redux__link bottom-link" href="https://react-redux.js.org/api/hooks" target="_blank" rel="noreferrer">
+        Redux Hooks
+      </a>
+
+      <style>
+        #redux-hooks .redux-hooks__code {
+          font-size: 14px;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="redux-devtools">
+      <h2 class="redux-devtools__title">Redux Developer Tools</h2>
+      <img class="redux-devtools__img next" src="pictures/redux-devtools.png" width="500" height="100"  alt="Redux dev tools">
+      <a class="redux-devtools__link bottom-link" href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en" target="_blank" rel="noreferrer">
+        Redux DevTools
+      </a>
+
+      <style>
+        #redux-devtools .redux-devtools__img {
+          display: block;
+          margin: 130px auto;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="other-tools">
+      <h2>Other ways to work with application state</h2>
+      <ul class="next">
+        <li>
+          <a href="https://mobx.js.org/README.html" target="_blank" rel="noreferrer">
+            MobX
+          </a>
+        </li>
+        <li class="next">
+          <a href="https://effector.dev/" target="_blank" rel="noreferrer">
+            effector
+          </a>
+        </li>
+      </ul>
+    </section>
+
     <section class="slide slide--bsa" id="redux-basic-flow">
       <h2>Redux Basic Flow</h2>
-      <img class="next" src="pictures/redux-basic-flow.png" width="450" alt="Redux Basic Flow">
-      <a href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
+      <img class="redux-basic-flow__img next" src="pictures/redux-basic-flow.png" width="450" alt="Redux Basic Flow">
+      <a class="redux-basic-flow__link bottom-link" href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
         Redux. From twitter hype to production
       </a>
 
       <style>
-        #redux-basic-flow {
-          display: flex;
-          flex-direction: column;
-        }
-
-        #redux-basic-flow img {
-          align-self: center;
-        }
-
-        #redux-basic-flow a {
-          margin: auto 0 30px;
-          align-self: center;
-          font-size: 12px;
+        #redux-basic-flow .redux-basic-flow__img {
+          display: block;
+          margin: 0 auto;
         }
       </style>
     </section>
 
     <section class="slide slide--bsa" id="redux-side-effects">
       <h2>Redux Side Effects</h2>
-      <img class="next" src="pictures/redux-side-effects.png" width="450" alt="Redux Basic Flow">
-      <a href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
+      <img class="redux-side-effect__img next" src="pictures/redux-side-effects.png" width="450" alt="Redux Basic Flow">
+      <a class="redux-side-effect__link bottom-link" href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
         Redux. From twitter hype to production
       </a>
 
       <style>
-        #redux-side-effects {
-          display: flex;
-          flex-direction: column;
-        }
-
-        #redux-side-effects img {
-          align-self: center;
-        }
-
-        #redux-side-effects a {
-          margin: auto 0 30px;
-          align-self: center;
-          font-size: 12px;
+        #redux-side-effects .redux-side-effect__img {
+          display: block;
+          margin: 0 auto;
         }
       </style>
     </section>
 
     <section class="slide slide--bsa" id="sync-async-redux">
       <h2>Sync/Async Redux</h2>
-      <p class="next">
+      <p class="sync-async-redux__wrapper next">
         <img src="pictures/redux-sync.gif" width="450" alt="Redux Basic Flow">
         <img src="pictures/redux-async.gif" width="400" alt="Redux Basic Flow">
       </p>
-      <a href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
+      <a class="sync-async-redux__link bottom-link" href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
         Redux. From twitter hype to production
       </a>
 
       <style>
-        #sync-async-redux {
-          display: flex;
-          flex-direction: column;
-        }
-
-        #sync-async-redux p {
+        #sync-async-redux .sync-async-redux__wrapper {
           display: flex;
           align-items: center;
           justify-content: center;
           margin: 0 -50px;
         }
-
-        #sync-async-redux a {
-          margin: auto 0 30px;
-          align-self: center;
-          font-size: 12px;
-        }
       </style>
     </section>
 
     <section class="slide slide--bsa" id="redux-middleware">
-      <h2>Redux Middleware</h2>
-      <pre class="next">
+      <h2 class="redux-middleware__title">Redux Middleware</h2>
+      <pre class="redux-middleware__code next">
         <span class="comment">// src/store/middlewares/logger/logger.middleware.js</span>
         <code>const logger = <mark class="next">(store) =></mark> <mark class="next">(next) =></mark> <mark class="next">(action) =></mark> {</code>
         <code class="next">  console.log('state before', store.getState());</code>
@@ -149,14 +608,14 @@
         <code class="next">  console.log('state after', store.getState());</code>
         <code class="next">};</code>
       </pre>
-      <pre class="next">
+      <pre class="redux-middleware__code next">
         <span class="comment">// src/store/store.js</span>
         <code>import { createStore, <mark class="important">applyMiddleware</mark> } from 'redux';</code>
         <code>import { logger as loggerMiddleware } from '../middlewares/middlewares.js';</code>
         <code> </code>
         <code class="mark">const store = createStore(reducer, applyMiddleware(loggerMiddleware));</code>
       </pre>
-      <a href="https://redux.js.org/understanding/history-and-design/middleware" target="_blank" rel="noreferrer">
+      <a class="redux-middleware__link bottom-link" href="https://redux.js.org/understanding/history-and-design/middleware" target="_blank" rel="noreferrer">
         Redux Middleware
       </a>
 
@@ -166,18 +625,12 @@
           flex-direction: column;
         }
 
-        #redux-middleware h2 {
+        #redux-middleware .redux-middleware__title {
           margin-bottom: 5px;
         }
 
-        #redux-middleware pre {
+        #redux-middleware .redux-middleware__code {
           font-size: 15px;
-        }
-
-        #redux-middleware a {
-          align-self: center;
-          margin: auto 0 30px;
-          font-size: 12px;
         }
       </style>
     </section>
@@ -190,49 +643,26 @@
           github.com/redux-thunk
         </a>
       </p>
-      <a class="thunk__link" href="https://www.npmjs.com/package/redux-thunk" target="_blank" rel="noreferrer">
+      <a class="thunk__link bottom-link" href="https://www.npmjs.com/package/redux-thunk" target="_blank" rel="noreferrer">
         npmjs.com/redux-thunk
       </a>
-
-      <style>
-        #thunk {
-          display: flex;
-          flex-direction: column;
-        }
-
-        #thunk .thunk__link {
-          align-self: center;
-          margin: auto 0 30px;
-          font-size: 12px;
-        }
-      </style>
     </section>
 
     <section class="slide slide--bsa" id="redux-toolkit">
-      <h2>Redux Toolkit</h2>
-      <img class="next" src="pictures/redux-logo.svg" width="250" alt="Redux Toolkit">
-      <a href="https://redux-toolkit.js.org/" target="_blank" rel="noreferrer">
+      <h2 class="redux-toolkit__title">Redux Toolkit</h2>
+      <img class="redux-toolkit__img next" src="pictures/redux-logo.svg" width="250" alt="Redux Toolkit">
+      <a class="redux-toolkit__link bottom-link" href="https://redux-toolkit.js.org/" target="_blank" rel="noreferrer">
         Redux Toolkit
       </a>
 
       <style>
-        #redux-toolkit {
-          display: flex;
-          flex-direction: column;
-        }
-
-        #redux-toolkit h2 {
+        #redux-toolkit .redux-toolkit__title {
           margin-bottom: 50px;
         }
 
-        #redux-toolkit img {
-          align-self: center;
-        }
-
-        #redux-toolkit a {
-          align-self: center;
-          margin: auto 0 30px;
-          font-size: 12px;
+        #redux-toolkit .redux-toolkit__img {
+          display: block;
+          margin: 0 auto;
         }
       </style>
     </section>
@@ -249,34 +679,23 @@
     </section>
 
     <section class="slide slide--bsa" id="redux-saga">
-      <h2>Redux Saga</h2>
+      <h2 class="redux-saga__title">Redux Saga</h2>
       <div class="next">
         <p>Sagas are implemented as <b>Generator</b> functions that yield objects</p>
-        <img src="pictures/redux-saga-logo.svg" width="400" alt="Redux Saga">
+        <img class="redux-saga__img" src="pictures/redux-saga-logo.svg" width="400" alt="Redux Saga">
       </div>
-      <a href="https://redux-saga.js.org/" target="_blank" rel="noreferrer">
+      <a class="redux-saga__link bottom-link" href="https://redux-saga.js.org/" target="_blank" rel="noreferrer">
         Redux Saga
       </a>
 
       <style>
-        #redux-saga {
-          display: flex;
-          flex-direction: column;
-        }
-
-        #redux-saga h2 {
+        #redux-saga .redux-saga__title {
           margin-bottom: 5px;
         }
 
-        #redux-saga img {
+        #redux-saga .redux-saga__img {
           display: block;
           margin: 0 auto;
-        }
-
-        #redux-saga a {
-          align-self: center;
-          margin: auto 0 30px;
-          font-size: 12px;
         }
       </style>
     </section>
@@ -325,7 +744,7 @@
     <section class="slide slide--bsa" id="redux-saga-helpers">
       <h2>Redux Saga Helpers</h2>
       <div class="redux-saga-helpers__wrapper next">
-        <ul>
+        <ul class="redux-saga-helpers__list">
           <li>
             <a href="https://redux-saga.js.org/docs/api/#takeeverypattern-saga-args" target="_blank" rel="noreferrer">takeEvery</a>
             — spawns saga on each dispatched action
@@ -338,7 +757,7 @@
             and other
           </li>
         </ul>
-        <pre>
+        <pre class="redux-saga-helpers__code">
           <code>import { call, put, <mark>takeEvery</mark> } from 'redux-saga/effects';</code>
           <code> </code>
           <code>function* getUser(action) {</code>
@@ -355,33 +774,22 @@
           <code>}</code>
         </pre>
       </div>
-      <a class="redux-saga-helpers__link" href="https://redux-saga.js.org/docs/basics/UsingSagaHelpers/#using-saga-helpers" target="_blank" rel="noreferrer">
+      <a class="redux-saga-helpers__link bottom-link" href="https://redux-saga.js.org/docs/basics/UsingSagaHelpers/#using-saga-helpers" target="_blank" rel="noreferrer">
         Redux Saga Helpers
       </a>
 
       <style>
-        #redux-saga-helpers {
-          display: flex;
-          flex-direction: column;
-        }
-
         #redux-saga-helpers .redux-saga-helpers__wrapper {
           display: flex;
         }
 
-        #redux-saga-helpers ul {
+        #redux-saga-helpers .redux-saga-helpers__list {
           font-size: 14px;
           margin-right: 50px;
           white-space: nowrap;
         }
 
-        #redux-saga-helpers pre {
-          font-size: 12px;
-        }
-
-        #redux-saga-helpers .redux-saga-helpers__link {
-          align-self: center;
-          margin: auto 0 30px;
+        #redux-saga-helpers .redux-saga-helpers__code {
           font-size: 12px;
         }
       </style>
@@ -390,7 +798,7 @@
     <section class="slide slide--bsa" id="redux-saga-effects">
       <h2>Redux Saga Effects</h2>
       <div class="redux-saga-effects__wrapper next">
-        <ul>
+        <ul class="redux-saga-effects__list">
           <li>
             <a href="https://redux-saga.js.org/docs/api/#callfn-args" target="_blank" rel="noreferrer">call</a>
             — calls function with passed arguments 🛑
@@ -407,7 +815,7 @@
             and 50+ more
           </li>
         </ul>
-        <pre>
+        <pre class="redux-saga-effects__code">
           <code>import { <mark>call</mark>, <mark>put</mark>, takeEvery } from 'redux-saga/effects';</code>
           <code> </code>
           <code>function* getUser(action) {</code>
@@ -424,33 +832,22 @@
           <code>}</code>
         </pre>
       </div>
-      <a class="redux-saga-effects__link" href="https://redux-saga.js.org/docs/api/#effect-creators" target="_blank" rel="noreferrer">
+      <a class="redux-saga-effects__link bottom-link" href="https://redux-saga.js.org/docs/api/#effect-creators" target="_blank" rel="noreferrer">
         Redux Saga Effects
       </a>
 
       <style>
-        #redux-saga-effects {
-          display: flex;
-          flex-direction: column;
-        }
-
         #redux-saga-effects .redux-saga-effects__wrapper {
           display: flex;
         }
 
-        #redux-saga-effects ul {
+        #redux-saga-effects .redux-saga-effects__list {
           font-size: 14px;
           margin-right: 50px;
           white-space: nowrap;
         }
 
-        #redux-saga-effects pre {
-          font-size: 12px;
-        }
-
-        #redux-saga-effects .redux-saga-effects__link {
-          align-self: center;
-          margin: auto 0 30px;
+        #redux-saga-effects .redux-saga-effects__code {
           font-size: 12px;
         }
       </style>
@@ -458,7 +855,7 @@
 
     <section class="slide slide--bsa" id="redux-saga-routine">
       <h2>Redux Saga Routine</h2>
-      <pre class="next">
+      <pre class="redux-saga-routine__code next">
         <code>import { <mark class="important">createRoutine</mark> } from 'redux-saga-routines';</code>
         <code> </code>
         <code>const routine = <mark class="important">createRoutine('ACTION_TYPE')</mark>;</code>
@@ -471,30 +868,63 @@
         <code>console.log(routine.success(payload)); // { type: 'ACTION_TYPE/SUCCESS', payload };</code>
         <code>console.log(routine.failure(payload)); // { type: 'ACTION_TYPE/FAILURE', payload };</code>
       </pre>
-      <a href="https://github.com/afitiskin/redux-saga-routines#readme" target="_blank" rel="noreferrer">
+      <a class="redux-saga-routine__link bottom-link" href="https://github.com/afitiskin/redux-saga-routines#readme" target="_blank" rel="noreferrer">
         github.com/redux-saga-routines
       </a>
 
       <style>
-        #redux-saga-routine {
-          display: flex;
-          flex-direction: column;
-        }
-
-        #redux-saga-routine  pre {
+        #redux-saga-routine  .redux-saga-routine__code {
           display: none;
           font-size: 14px;
         }
 
-        #redux-saga-routine  pre.active,
-        #redux-saga-routine  pre.visited {
+        #redux-saga-routine  .redux-saga-routine__code.active,
+        #redux-saga-routine  .redux-saga-routine__code.visited {
           display: block;
         }
+      </style>
+    </section>
 
-        #redux-saga-routine a {
-          align-self: center;
-          margin: auto 0 30px;
-          font-size: 12px;
+    <section class="slide slide--bsa" id="legacy">
+      <h2 class="legacy__title">Legacy 🪦</h2>
+
+      <style>
+        #legacy .legacy__title {
+          margin: 180px 0 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="connect">
+      <h2>connect()</h2>
+      <pre class="connect__code next">
+        <span class="comment">// src/components/dashboard/dashboard.jsx</span>
+        <code>import { <mark>connect</mark> } from 'react-redux';</code>
+        <div class="next">
+          <code> </code>
+          <code >class Dashboard {</code>
+          <code>  componentDidMound() { </code>
+          <code>    this.props.onFetchTodos();</code>
+          <code>  }</code>
+          <code> </code>
+          <code>  render() {</code>
+          <code>    return &lt;ul&gt;{this.props.todos.map((it) => &lt;li key={it.id}&gt;{it.name}&lt;/li&gt;)}&lt;/ul&gt;;</code>
+          <code>  }</code>
+          <code>}</code>
+          <code> </code>
+          <code class="mark">const mapStateToProps = (store) => ({ todos: store.todos.todos });</code>
+          <code class="mark">const mapDispatchToProps = () => ({ onFetchTodos: TodosActionCreator.fetchTodo })</code>
+          <code> </code>
+          <code class="mark">export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);</code>
+        </div>
+      </pre>
+      <a class="connect__link bottom-link" href="https://react-redux.js.org/api/connect" target="_blank" rel="noreferrer">
+        connect()
+      </a>
+
+      <style>
+        #connect .connect__code {
+          font-size: 10px;
         }
       </style>
     </section>
