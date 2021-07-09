@@ -279,7 +279,7 @@
 
     <section class="slide slide--bsa" id="flux-entities">
       <h2>Action, Store, Dispatch & View</h2>
-      <ul class="flux-entities__list">
+      <ul class="flux-entities__list next">
         <li class="flux-entities__item">Action</li>
         <li class="flux-entities__item">Dispatcher</li>
         <li class="flux-entities__item">Store</li>
@@ -307,6 +307,100 @@
           place-items: center;
           width: 150px;
           height: 150px;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-action">
+      <h2 class="flux-action__title">Action</h2>
+      <p class="flux-action__block next">Action</p>
+      <ul class="next">
+        <li>Describes actions</li>
+        <li class="next">Answers the question: "What needs to be done"</li>
+        <li class="next">Must contain a name (type)</li>
+      </ul>
+      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-action .flux-action__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-dispatcher">
+      <h2 class="flux-dispatcher__title">Dispatcher</h2>
+      <p class="flux-dispatcher__block next">Dispatcher</p>
+      <ul class="next">
+        <li>Manager</li>
+        <li class="next">Sends information about the event to the storage</li>
+      </ul>
+      <a class="flux-dispatcher__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-dispatcher .flux-dispatcher__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-store">
+      <h2 class="flux-store__title">Store</h2>
+      <p class="flux-store__block next">Store</p>
+      <ul class="next">
+        <li>State of Application</li>
+        <li class="next">Data can only change based on actions</li>
+        <li class="next">Provides interfaces for getting data</li>
+      </ul>
+      <a class="flux-store__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-store .flux-store__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="flux-view">
+      <h2 class="flux-view__title">View</h2>
+      <p class="flux-view__block next">View</p>
+      <ul class="next">
+        <li>Presentation of information</li>
+        <li class="next">Components</li>
+      </ul>
+      <a class="flux-view__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-view .flux-view__block {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
           border: 1px dashed var(--color-grey);
         }
       </style>
