@@ -895,6 +895,40 @@
       </style>
     </section>
 
+    <section class="slide slide--bsa" id="connect">
+      <h2>connect()</h2>
+      <pre class="connect__code next">
+        <span class="comment">// src/components/dashboard/dashboard.jsx</span>
+        <code>import { <mark>connect</mark> } from 'react-redux';</code>
+        <div class="next">
+          <code> </code>
+          <code >class Dashboard {</code>
+          <code>  componentDidMound() { </code>
+          <code>    this.props.onFetchTodos();</code>
+          <code>  }</code>
+          <code> </code>
+          <code>  render() {</code>
+          <code>    return &lt;ul&gt;{this.props.todos.map((it) => &lt;li key={it.id}&gt;{it.name}&lt;/li&gt;)}&lt;/ul&gt;;</code>
+          <code>  }</code>
+          <code>}</code>
+          <code> </code>
+          <code class="mark">const mapStateToProps = (store) => ({ todos: store.todos.todos });</code>
+          <code class="mark">const mapDispatchToProps = () => ({ onFetchTodos: TodosActionCreator.fetchTodo })</code>
+          <code> </code>
+          <code class="mark">export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);</code>
+        </div>
+      </pre>
+      <a class="connect__link bottom-link" href="https://react-redux.js.org/api/connect" target="_blank" rel="noreferrer">
+        connect()
+      </a>
+
+      <style>
+        #connect .connect__code {
+          font-size: 10px;
+        }
+      </style>
+    </section>
+
     <section class="slide slide--bsa" id="thanks">
       <h2>Thanks 🍒</h2>
 
