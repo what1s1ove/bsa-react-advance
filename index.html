@@ -277,6 +277,41 @@
       </style>
     </section>
 
+    <section class="slide slide--bsa" id="flux-entities">
+      <h2>Action, Store, Dispatch & View</h2>
+      <ul class="flux-entities__list">
+        <li class="flux-entities__item">Action</li>
+        <li class="flux-entities__item">Dispatcher</li>
+        <li class="flux-entities__item">Store</li>
+        <li class="flux-entities__item">View</li>
+      </ul>
+      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+        Flux
+      </a>
+
+      <style>
+        #flux-entities .flux-entities__list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 120px 0 0;
+          gap: 30px;
+        }
+
+        #flux-entities .flux-entities__item::before {
+          display: none;
+        }
+
+        #flux-entities .flux-entities__item {
+          display: grid;
+          place-items: center;
+          width: 150px;
+          height: 150px;
+          border: 1px dashed var(--color-grey);
+        }
+      </style>
+    </section>
+
     <section class="slide slide--bsa" id="redux-basic-flow">
       <h2>Redux Basic Flow</h2>
       <img class="redux-basic-flow__img next" src="pictures/redux-basic-flow.png" width="450" height="450" alt="Redux Basic Flow">
