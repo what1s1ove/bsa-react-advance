@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <title>Shower Presentation Engine</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@shower/ribbon/styles/styles.css"
+    />
     <style>
       .shower {
         --slide-ratio: calc(16 / 9);
@@ -15,7 +18,8 @@
       }
 
       .slide--bsa {
-        background-image: url('./pictures/binary-studio-logo.svg'), url('./pictures/binary-studio-academy-logo.svg');
+        background-image: url("./pictures/binary-studio-logo.svg"),
+          url("./pictures/binary-studio-academy-logo.svg");
         background-repeat: no-repeat;
         background-position: right 20px bottom 25px, left 20px bottom 15px;
         background-size: 75px, 50px;
@@ -31,7 +35,6 @@
     </style>
   </head>
   <body class="shower list">
-
     <header class="caption">
       <h1>React</h1>
       <p>A JavaScript library for building user interfaces</p>
@@ -40,11 +43,23 @@
     <section class="slide" id="cover">
       <h2>React</h2>
       <p>A JavaScript library for building user interfaces</p>
-      <a class="cover__link" href="https://reactjs.org/" target="_blank" rel="noreferrer">
-        <img src="pictures/react-logo.svg" width="150" height="150" alt="React logo">
+      <a
+        class="cover__link"
+        href="https://reactjs.org/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="pictures/react-logo.svg"
+          width="150"
+          height="150"
+          alt="React logo"
+        />
       </a>
       <p class="copyright right">
-        <a href="https://whatislove.dev/" target="_blank" rel="noreferrer">© Vladyslav Zubko</a>
+        <a href="https://whatislove.dev/" target="_blank" rel="noreferrer"
+          >© Vladyslav Zubko</a
+        >
       </p>
 
       <style>
@@ -68,7 +83,8 @@
     <section class="slide slide--bsa" id="business-logic">
       <h2 class="business-logic__title">Business Logic</h2>
       <p class="business-logic__description next">
-        Real world rules and constraints that are described using a computer program
+        Real world rules and constraints that are described using a computer
+        program
       </p>
 
       <style>
@@ -86,14 +102,20 @@
             <li>
               <i>Why was it all started</i>
             </li>
-            <li class="real-business-logic__wrapper-list-item next">Management todos</li>
+            <li class="real-business-logic__wrapper-list-item next">
+              Management todos
+            </li>
           </ul>
         </li>
         <li class="real-business-logic__wrapper-item">
           <h3 class="real-business-logic__wrapper-title">Not Business Logic</h3>
           <ul class="real-business-logic__wrapper-list next">
-            <li class="real-business-logic__wrapper-list-item">Event handling</li>
-            <li class="real-business-logic__wrapper-list-item next">Loading...</li>
+            <li class="real-business-logic__wrapper-list-item">
+              Event handling
+            </li>
+            <li class="real-business-logic__wrapper-list-item next">
+              Loading...
+            </li>
           </ul>
         </li>
       </ul>
@@ -126,7 +148,12 @@
 
     <section class="slide slide--bsa" id="react-flow">
       <h2>React Application Structure</h2>
-      <img class="react-flow__img next" src="pictures/react-flow.svg" width="450" alt="React Flow">
+      <img
+        class="react-flow__img next"
+        src="pictures/react-flow-1.svg"
+        width="450"
+        alt="React Flow"
+      />
 
       <style>
         #react-flow .react-flow__img {
@@ -142,16 +169,28 @@
           <h3 class="logic-storages__wrapper-title">Inside Component</h3>
           <ul class="logic-storages__wrapper-list next">
             <li>Loading todos in the &lt;Todolist /&gt; (where need it)</li>
-            <li class="logic-storages__wrapper-list-item next">Component cannot be reused</li>
-            <li class="logic-storages__wrapper-list-item next">Hard to write tests</li>
+            <li class="logic-storages__wrapper-list-item next">
+              Component cannot be reused
+            </li>
+            <li class="logic-storages__wrapper-list-item next">
+              Hard to write tests
+            </li>
           </ul>
         </li>
         <li class="logic-storages__wrapper-item">
           <h3 class="logic-storages__wrapper-title">At the top level</h3>
           <ul class="logic-storages__wrapper-list">
-            <li class="logic-storages__wrapper-list-item next">Components becomes more reusable</li>
-            <li class="logic-storages__wrapper-list-item next">Component becomes too large<br> and starts to know about everything</li>
-            <li class="logic-storages__wrapper-list-item next">Writing a test is inconvenient<br> and time consuming</li>
+            <li class="logic-storages__wrapper-list-item next">
+              Components becomes more reusable
+            </li>
+            <li class="logic-storages__wrapper-list-item next">
+              Component becomes too large<br />
+              and starts to know about everything
+            </li>
+            <li class="logic-storages__wrapper-list-item next">
+              Writing a test is inconvenient<br />
+              and time consuming
+            </li>
           </ul>
         </li>
       </ul>
@@ -174,10 +213,13 @@
 
     <section class="slide slide--bsa" id="flux">
       <h2 class="flux__title">Flux</h2>
-      <p class="business-logic__description next">
-        Architectural Pattern
-      </p>
-      <a class="flux__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <p class="business-logic__description next">Architectural Pattern</p>
+      <a
+        class="flux__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -190,9 +232,24 @@
 
     <section class="slide slide--bsa" id="react-flow">
       <h2 class="react-flow__title">Interactions between components</h2>
-      <img class="react-flow__img next" src="pictures/react-flow-1.svg" width="450" alt="React Flow">
-      <img class="react-flow__img next" src="pictures/react-flow-2.svg" width="450" alt="React Flow">
-      <img class="react-flow__img next" src="pictures/react-flow-3.svg" width="450" alt="React Flow">
+      <img
+        class="react-flow__img next"
+        src="pictures/react-flow-1.svg"
+        width="450"
+        alt="React Flow"
+      />
+      <img
+        class="react-flow__img next"
+        src="pictures/react-flow-2.svg"
+        width="450"
+        alt="React Flow"
+      />
+      <img
+        class="react-flow__img next"
+        src="pictures/react-flow-3.svg"
+        width="450"
+        alt="React Flow"
+      />
 
       <style>
         #react-flow .react-flow__img {
@@ -212,15 +269,30 @@
         <li class="next">Rerender when props change (always)</li>
         <li class="next">Root component becomes more complex</li>
       </ul>
-      <a class="flux-flow__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <a
+        class="flux-flow__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
     </section>
 
     <section class="slide slide--bsa" id="flux-store">
       <h2 class="flux-store__title">Single Application State</h2>
-      <img class="flux-store__img next" src="pictures/flux-flow-store.svg" width="650" alt="Flux Flow">
-      <a class="flux-store__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <img
+        class="flux-store__img next"
+        src="pictures/flux-flow-store.svg"
+        width="650"
+        alt="Flux Flow"
+      />
+      <a
+        class="flux-store__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -248,7 +320,12 @@
         </li>
         <li class="next">New entities: Action, Store, Dispatch & View</li>
       </ul>
-      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <a
+        class="flux-features__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -267,7 +344,12 @@
         <li class="flux-entities__item">Store</li>
         <li class="flux-entities__item">View</li>
       </ul>
-      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <a
+        class="flux-features__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -302,7 +384,12 @@
         <li class="next">"What needs to be done"</li>
         <li class="next">Must contain a name (type)</li>
       </ul>
-      <a class="flux-features__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <a
+        class="flux-features__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -325,7 +412,12 @@
         <li>Manager</li>
         <li class="next">Sends information about the event to the storage</li>
       </ul>
-      <a class="flux-dispatcher__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <a
+        class="flux-dispatcher__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -349,7 +441,12 @@
         <li class="next">Data can only change based on actions</li>
         <li class="next">Provides interfaces for getting data</li>
       </ul>
-      <a class="flux-store__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <a
+        class="flux-store__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -372,7 +469,12 @@
         <li>Presentation of information</li>
         <li class="next">Components</li>
       </ul>
-      <a class="flux-view__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <a
+        class="flux-view__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -390,8 +492,18 @@
 
     <section class="slide slide--bsa" id="flux-entities-flow">
       <h2>All together 🧬</h2>
-      <img class="flux-entities-flow__img next" src="pictures/flex-entities-flow.png" width="650" alt="Flux Flow">
-      <a class="flux-entities-flow__link bottom-link" href="https://facebook.github.io/flux/" target="_blank" rel="noreferrer">
+      <img
+        class="flux-entities-flow__img next"
+        src="pictures/flex-entities-flow.png"
+        width="650"
+        alt="Flux Flow"
+      />
+      <a
+        class="flux-entities-flow__link bottom-link"
+        href="https://facebook.github.io/flux/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Flux
       </a>
 
@@ -405,7 +517,12 @@
 
     <section class="slide slide--bsa" id="redux">
       <h2 class="redux__title">Redux</h2>
-      <a class="redux__link bottom-link" href="https://redux.js.org/" target="_blank" rel="noreferrer">
+      <a
+        class="redux__link bottom-link"
+        href="https://redux.js.org/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux
       </a>
 
@@ -424,18 +541,48 @@
         <li class="next">One-way sync from storage to View via subscription</li>
         <li class="next">Reverse sync view ➡️ store works through actions</li>
       </ul>
-      <a class="redux__link bottom-link" href="https://redux.js.org/" target="_blank" rel="noreferrer">
+      <a
+        class="redux__link bottom-link"
+        href="https://redux.js.org/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux
       </a>
     </section>
 
     <section class="slide slide--bsa" id="redux-flow">
       <h2>Redux Flow</h2>
-      <img class="redux-flow__img next" src="pictures/redux-flow-1.png" width="700" alt="Redux Flow">
-      <img class="redux-flow__img next" src="pictures/redux-flow-2.png" width="700" alt="Redux Flow">
-      <img class="redux-flow__img next" src="pictures/redux-flow-3.png" width="700" alt="Redux Flow">
-      <img class="redux-flow__img next" src="pictures/redux-flow-4.png" width="700" alt="Redux Flow">
-      <a class="redux__link bottom-link" href="https://redux.js.org/" target="_blank" rel="noreferrer">
+      <img
+        class="redux-flow__img next"
+        src="pictures/redux-flow-1.png"
+        width="700"
+        alt="Redux Flow"
+      />
+      <img
+        class="redux-flow__img next"
+        src="pictures/redux-flow-2.png"
+        width="700"
+        alt="Redux Flow"
+      />
+      <img
+        class="redux-flow__img next"
+        src="pictures/redux-flow-3.png"
+        width="700"
+        alt="Redux Flow"
+      />
+      <img
+        class="redux-flow__img next"
+        src="pictures/redux-flow-4.png"
+        width="700"
+        alt="Redux Flow"
+      />
+      <a
+        class="redux__link bottom-link"
+        href="https://redux.js.org/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux
       </a>
 
@@ -451,7 +598,9 @@
 
     <section class="slide slide--bsa" id="ac">
       <h2 class="ac__title">Action Creators pattern</h2>
-      <p class="ac__description next">Approach when the action is created in a separate function</p>
+      <p class="ac__description next">
+        Approach when the action is created in a separate function
+      </p>
 
       <style>
         #ac .ac__title {
@@ -479,7 +628,12 @@
           <code>}</code>
         </div>
       </pre>
-      <a class="redux__link bottom-link" href="https://react-redux.js.org/api/hooks" target="_blank" rel="noreferrer">
+      <a
+        class="redux__link bottom-link"
+        href="https://react-redux.js.org/api/hooks"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux Hooks
       </a>
 
@@ -492,8 +646,19 @@
 
     <section class="slide slide--bsa" id="redux-devtools">
       <h2 class="redux-devtools__title">Redux Developer Tools</h2>
-      <img class="redux-devtools__img next" src="pictures/redux-devtools.png" width="500" height="100"  alt="Redux dev tools">
-      <a class="redux-devtools__link bottom-link" href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en" target="_blank" rel="noreferrer">
+      <img
+        class="redux-devtools__img next"
+        src="pictures/redux-devtools.png"
+        width="500"
+        height="100"
+        alt="Redux dev tools"
+      />
+      <a
+        class="redux-devtools__link bottom-link"
+        href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux DevTools
       </a>
 
@@ -509,7 +674,11 @@
       <h2>Other ways to work with application state</h2>
       <ul class="next">
         <li>
-          <a href="https://mobx.js.org/README.html" target="_blank" rel="noreferrer">
+          <a
+            href="https://mobx.js.org/README.html"
+            target="_blank"
+            rel="noreferrer"
+          >
             MobX
           </a>
         </li>
@@ -525,20 +694,40 @@
       <h2>Commits</h2>
       <ul>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/a830761816db0b0b92388cf298d9ca3d4148cee0" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/a830761816db0b0b92388cf298d9ca3d4148cee0"
+            target="_blank"
+            rel="noreferrer"
+          >
             add application state
           </a>
         </li>
       </ul>
-      <a class="bottom-link" href="https://github.com/what1s1ove/bsa-react-app/pull/1" target="_blank" rel="noreferrer">
+      <a
+        class="bottom-link"
+        href="https://github.com/what1s1ove/bsa-react-app/pull/1"
+        target="_blank"
+        rel="noreferrer"
+      >
         todolist
       </a>
     </section>
 
     <section class="slide slide--bsa" id="redux-basic-flow">
       <h2>Redux Basic Flow</h2>
-      <img class="redux-basic-flow__img next" src="pictures/redux-basic-flow.png" width="450" alt="Redux Basic Flow">
-      <a class="redux-basic-flow__link bottom-link" href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
+      <img
+        class="redux-basic-flow__img next"
+        src="pictures/redux-basic-flow.png"
+        width="450"
+        alt="Redux Basic Flow"
+      />
+      <a
+        class="redux-basic-flow__link bottom-link"
+        href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux. From twitter hype to production
       </a>
 
@@ -552,8 +741,18 @@
 
     <section class="slide slide--bsa" id="redux-side-effects">
       <h2>Redux Side Effects</h2>
-      <img class="redux-side-effect__img next" src="pictures/redux-side-effects.png" width="450" alt="Redux Basic Flow">
-      <a class="redux-side-effect__link bottom-link" href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
+      <img
+        class="redux-side-effect__img next"
+        src="pictures/redux-side-effects.png"
+        width="450"
+        alt="Redux Basic Flow"
+      />
+      <a
+        class="redux-side-effect__link bottom-link"
+        href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux. From twitter hype to production
       </a>
 
@@ -568,10 +767,19 @@
     <section class="slide slide--bsa" id="sync-async-redux">
       <h2>Sync/Async Redux</h2>
       <p class="sync-async-redux__wrapper next">
-        <img src="pictures/redux-sync.gif" width="450" alt="Redux Basic Flow">
-        <img src="pictures/redux-async.gif" width="400" alt="Redux Basic Flow">
+        <img src="pictures/redux-sync.gif" width="450" alt="Redux Basic Flow" />
+        <img
+          src="pictures/redux-async.gif"
+          width="400"
+          alt="Redux Basic Flow"
+        />
       </p>
-      <a class="sync-async-redux__link bottom-link" href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production" target="_blank" rel="noreferrer">
+      <a
+        class="sync-async-redux__link bottom-link"
+        href="http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux. From twitter hype to production
       </a>
 
@@ -603,7 +811,12 @@
         <code> </code>
         <code class="mark">const store = createStore(reducer, applyMiddleware(loggerMiddleware));</code>
       </pre>
-      <a class="redux-middleware__link bottom-link" href="https://redux.js.org/understanding/history-and-design/middleware" target="_blank" rel="noreferrer">
+      <a
+        class="redux-middleware__link bottom-link"
+        href="https://redux.js.org/understanding/history-and-design/middleware"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux Middleware
       </a>
 
@@ -627,17 +840,32 @@
       <h2>Commits</h2>
       <ul>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/795675e6c26e63eb9c5232ed3f78d3e6bcc0f085" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/795675e6c26e63eb9c5232ed3f78d3e6bcc0f085"
+            target="_blank"
+            rel="noreferrer"
+          >
             add json-server & concurrently
           </a>
         </li>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/c0ebc05ce7c659a5d0af3a855ce9c9c8ca3e7049" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/c0ebc05ce7c659a5d0af3a855ce9c9c8ca3e7049"
+            target="_blank"
+            rel="noreferrer"
+          >
             add call-api middleware
           </a>
         </li>
       </ul>
-      <a class="bottom-link" href="https://github.com/what1s1ove/bsa-react-app/pull/1" target="_blank" rel="noreferrer">
+      <a
+        class="bottom-link"
+        href="https://github.com/what1s1ove/bsa-react-app/pull/1"
+        target="_blank"
+        rel="noreferrer"
+      >
         todolist
       </a>
     </section>
@@ -646,11 +874,20 @@
       <h2>Thunk</h2>
       <p class="next">
         source code:
-        <a href="https://github.com/reduxjs/redux-thunk/blob/master/src/index.js" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/reduxjs/redux-thunk/blob/master/src/index.js"
+          target="_blank"
+          rel="noreferrer"
+        >
           github.com/redux-thunk
         </a>
       </p>
-      <a class="thunk__link bottom-link" href="https://www.npmjs.com/package/redux-thunk" target="_blank" rel="noreferrer">
+      <a
+        class="thunk__link bottom-link"
+        href="https://www.npmjs.com/package/redux-thunk"
+        target="_blank"
+        rel="noreferrer"
+      >
         npmjs.com/redux-thunk
       </a>
     </section>
@@ -659,25 +896,50 @@
       <h2>Commits</h2>
       <ul>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/a7e71538d7bb74f5ba0e210146fbab5936c60412" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/a7e71538d7bb74f5ba0e210146fbab5936c60412"
+            target="_blank"
+            rel="noreferrer"
+          >
             add thunk middleware
           </a>
         </li>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/fe55514919c9d235e30624116733e3c166b6514a" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/fe55514919c9d235e30624116733e3c166b6514a"
+            target="_blank"
+            rel="noreferrer"
+          >
             update actions & add missing crud requests
           </a>
         </li>
       </ul>
-      <a class="bottom-link" href="https://github.com/what1s1ove/bsa-react-app/pull/1" target="_blank" rel="noreferrer">
+      <a
+        class="bottom-link"
+        href="https://github.com/what1s1ove/bsa-react-app/pull/1"
+        target="_blank"
+        rel="noreferrer"
+      >
         todolist
       </a>
     </section>
 
     <section class="slide slide--bsa" id="redux-toolkit">
       <h2 class="redux-toolkit__title">Redux Toolkit</h2>
-      <img class="redux-toolkit__img next" src="pictures/redux-logo.svg" width="250" alt="Redux Toolkit">
-      <a class="redux-toolkit__link bottom-link" href="https://redux-toolkit.js.org/" target="_blank" rel="noreferrer">
+      <img
+        class="redux-toolkit__img next"
+        src="pictures/redux-logo.svg"
+        width="250"
+        alt="Redux Toolkit"
+      />
+      <a
+        class="redux-toolkit__link bottom-link"
+        href="https://redux-toolkit.js.org/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux Toolkit
       </a>
 
@@ -697,22 +959,42 @@
       <h2>Commits</h2>
       <ul>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/efaf5e4d5cb393632742ba3878ac702cb6e206b4" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/efaf5e4d5cb393632742ba3878ac702cb6e206b4"
+            target="_blank"
+            rel="noreferrer"
+          >
             add rtk
           </a>
         </li>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/2819ae8ce18dc0f30ded0674bc9d8185486f9f59" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/2819ae8ce18dc0f30ded0674bc9d8185486f9f59"
+            target="_blank"
+            rel="noreferrer"
+          >
             refactor actions
           </a>
         </li>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/eb82be2bb08262345411a0c44e4315067a4cbec1" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/eb82be2bb08262345411a0c44e4315067a4cbec1"
+            target="_blank"
+            rel="noreferrer"
+          >
             refactor reducers
           </a>
         </li>
       </ul>
-      <a class="bottom-link" href="https://github.com/what1s1ove/bsa-react-app/pull/1" target="_blank" rel="noreferrer">
+      <a
+        class="bottom-link"
+        href="https://github.com/what1s1ove/bsa-react-app/pull/1"
+        target="_blank"
+        rel="noreferrer"
+      >
         todolist
       </a>
     </section>
@@ -731,10 +1013,22 @@
     <section class="slide slide--bsa" id="redux-saga">
       <h2 class="redux-saga__title">Redux Saga</h2>
       <div class="next">
-        <p>Sagas are implemented as <b>Generator</b> functions that yield objects</p>
-        <img class="redux-saga__img" src="pictures/redux-saga-logo.svg" width="400" alt="Redux Saga">
+        <p>
+          Sagas are implemented as <b>Generator</b> functions that yield objects
+        </p>
+        <img
+          class="redux-saga__img"
+          src="pictures/redux-saga-logo.svg"
+          width="400"
+          alt="Redux Saga"
+        />
       </div>
-      <a class="redux-saga__link bottom-link" href="https://redux-saga.js.org/" target="_blank" rel="noreferrer">
+      <a
+        class="redux-saga__link bottom-link"
+        href="https://redux-saga.js.org/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux Saga
       </a>
 
@@ -752,15 +1046,28 @@
 
     <section class="slide slide--bsa" id="redux-saga-flow">
       <h2>Redux Saga Flow</h2>
-      <img class="next" src="pictures/redux-sage-schema.png" width="450" alt="Redux Saga Schema">
+      <img
+        class="next"
+        src="pictures/redux-sage-schema.png"
+        width="450"
+        alt="Redux Saga Schema"
+      />
       <ul class="next">
         <li>
-          <a href="https://redux-saga.js.org/docs/basics/UsingSagaHelpers/#using-saga-helpers" target="_blank" rel="noreferrer">
+          <a
+            href="https://redux-saga.js.org/docs/basics/UsingSagaHelpers/#using-saga-helpers"
+            target="_blank"
+            rel="noreferrer"
+          >
             Saga Helpers
           </a>
         </li>
         <li>
-          <a href="https://redux-saga.js.org/docs/api/#effect-creators" target="_blank" rel="noreferrer">
+          <a
+            href="https://redux-saga.js.org/docs/api/#effect-creators"
+            target="_blank"
+            rel="noreferrer"
+          >
             Saga Effects
           </a>
         </li>
@@ -796,16 +1103,24 @@
       <div class="redux-saga-helpers__wrapper next">
         <ul class="redux-saga-helpers__list">
           <li>
-            <a href="https://redux-saga.js.org/docs/api/#takeeverypattern-saga-args" target="_blank" rel="noreferrer">takeEvery</a>
+            <a
+              href="https://redux-saga.js.org/docs/api/#takeeverypattern-saga-args"
+              target="_blank"
+              rel="noreferrer"
+              >takeEvery</a
+            >
             — spawns saga on each dispatched action
           </li>
           <li class="next">
-            <a href="https://redux-saga.js.org/docs/api/#takelatestpattern-saga-args" target="_blank" rel="noreferrer">takeLatest</a>
+            <a
+              href="https://redux-saga.js.org/docs/api/#takelatestpattern-saga-args"
+              target="_blank"
+              rel="noreferrer"
+              >takeLatest</a
+            >
             — spawns saga on the <b>last</b> dispatched action
           </li>
-          <li class="next">
-            and other
-          </li>
+          <li class="next">and other</li>
         </ul>
         <pre class="redux-saga-helpers__code">
           <code>import { call, put, <mark>takeEvery</mark> } from 'redux-saga/effects';</code>
@@ -824,7 +1139,12 @@
           <code>}</code>
         </pre>
       </div>
-      <a class="redux-saga-helpers__link bottom-link" href="https://redux-saga.js.org/docs/basics/UsingSagaHelpers/#using-saga-helpers" target="_blank" rel="noreferrer">
+      <a
+        class="redux-saga-helpers__link bottom-link"
+        href="https://redux-saga.js.org/docs/basics/UsingSagaHelpers/#using-saga-helpers"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux Saga Helpers
       </a>
 
@@ -850,20 +1170,33 @@
       <div class="redux-saga-effects__wrapper next">
         <ul class="redux-saga-effects__list">
           <li>
-            <a href="https://redux-saga.js.org/docs/api/#callfn-args" target="_blank" rel="noreferrer">call</a>
+            <a
+              href="https://redux-saga.js.org/docs/api/#callfn-args"
+              target="_blank"
+              rel="noreferrer"
+              >call</a
+            >
             — calls function with passed arguments 🛑
           </li>
           <li class="next">
-            <a href="https://redux-saga.js.org/docs/api/#putaction" target="_blank" rel="noreferrer">put</a>
+            <a
+              href="https://redux-saga.js.org/docs/api/#putaction"
+              target="_blank"
+              rel="noreferrer"
+              >put</a
+            >
             — dispatches action 🟢
           </li>
           <li class="next">
-            <a href="https://redux-saga.js.org/docs/api/#selectselector-args" target="_blank" rel="noreferrer">select</a>
+            <a
+              href="https://redux-saga.js.org/docs/api/#selectselector-args"
+              target="_blank"
+              rel="noreferrer"
+              >select</a
+            >
             — gets data from store 🟢
           </li>
-          <li class="next">
-            and 50+ more
-          </li>
+          <li class="next">and 50+ more</li>
         </ul>
         <pre class="redux-saga-effects__code">
           <code>import { <mark>call</mark>, <mark>put</mark>, takeEvery } from 'redux-saga/effects';</code>
@@ -882,7 +1215,12 @@
           <code>}</code>
         </pre>
       </div>
-      <a class="redux-saga-effects__link bottom-link" href="https://redux-saga.js.org/docs/api/#effect-creators" target="_blank" rel="noreferrer">
+      <a
+        class="redux-saga-effects__link bottom-link"
+        href="https://redux-saga.js.org/docs/api/#effect-creators"
+        target="_blank"
+        rel="noreferrer"
+      >
         Redux Saga Effects
       </a>
 
@@ -918,18 +1256,23 @@
         <code>console.log(routine.success(payload)); // { type: 'ACTION_TYPE/SUCCESS', payload };</code>
         <code>console.log(routine.failure(payload)); // { type: 'ACTION_TYPE/FAILURE', payload };</code>
       </pre>
-      <a class="redux-saga-routine__link bottom-link" href="https://github.com/afitiskin/redux-saga-routines#readme" target="_blank" rel="noreferrer">
+      <a
+        class="redux-saga-routine__link bottom-link"
+        href="https://github.com/afitiskin/redux-saga-routines#readme"
+        target="_blank"
+        rel="noreferrer"
+      >
         github.com/redux-saga-routines
       </a>
 
       <style>
-        #redux-saga-routine  .redux-saga-routine__code {
+        #redux-saga-routine .redux-saga-routine__code {
           display: none;
           font-size: 14px;
         }
 
-        #redux-saga-routine  .redux-saga-routine__code.active,
-        #redux-saga-routine  .redux-saga-routine__code.visited {
+        #redux-saga-routine .redux-saga-routine__code.active,
+        #redux-saga-routine .redux-saga-routine__code.visited {
           display: block;
         }
       </style>
@@ -939,17 +1282,32 @@
       <h2>Commits</h2>
       <ul>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/bc6c042e8afcbb359d02072a15088ae1a0d49658" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/bc6c042e8afcbb359d02072a15088ae1a0d49658"
+            target="_blank"
+            rel="noreferrer"
+          >
             add saga deps
           </a>
         </li>
         <li>
-          <a class="app-overview__link" href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/b7c47a15e2cb473799ccb11709b7e69229a602c7" target="_blank" rel="noreferrer">
+          <a
+            class="app-overview__link"
+            href="https://github.com/what1s1ove/bsa-react-app/pull/1/commits/b7c47a15e2cb473799ccb11709b7e69229a602c7"
+            target="_blank"
+            rel="noreferrer"
+          >
             add saga action
           </a>
         </li>
       </ul>
-      <a class="bottom-link" href="https://github.com/what1s1ove/bsa-react-app/pull/1" target="_blank" rel="noreferrer">
+      <a
+        class="bottom-link"
+        href="https://github.com/what1s1ove/bsa-react-app/pull/1"
+        target="_blank"
+        rel="noreferrer"
+      >
         todolist
       </a>
     </section>
@@ -987,7 +1345,12 @@
           <code class="mark">export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);</code>
         </div>
       </pre>
-      <a class="connect__link bottom-link" href="https://react-redux.js.org/api/connect" target="_blank" rel="noreferrer">
+      <a
+        class="connect__link bottom-link"
+        href="https://react-redux.js.org/api/connect"
+        target="_blank"
+        rel="noreferrer"
+      >
         connect()
       </a>
 
@@ -1017,6 +1380,5 @@
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
     <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
-
   </body>
 </html>
